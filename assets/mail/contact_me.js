@@ -10,10 +10,10 @@ $(function () {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             console.log('Capturing Data')
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
+            var name = $("lungile").val();
+            var email = $("lungilenx@gmail.com").val();
+            var phone = $("0837729926").val();
+            var message = $("Hi").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
