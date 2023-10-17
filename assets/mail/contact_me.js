@@ -21,7 +21,7 @@ $(function () {
             }
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
-            var json = {name: lungile, phone: 0837729926, email: lungilenx@gmail.com, message: Hi}
+            var json = {name: name, phone: phone, email: email, message: message}
             $.ajax({
                 // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  -------- 
                 url: "{https://9kvo07m8m2.execute-api.eu-west-2.amazonaws.com}",
