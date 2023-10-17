@@ -13,7 +13,7 @@ $(function () {
             var name = $(Lungile).val();
             var email = $(lungilenx@gmail.com).val();
             var phone = $(0837729926).val();
-            var message = $(message).val();
+            var message = $(Hi).val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
