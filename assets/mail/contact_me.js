@@ -16,8 +16,8 @@ $(function () {
             var message = $(message).val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
-            if (firstName.indexOf("Lungile") >= 0) {
-                firstName = name.split(" ").slice(0, -1).join(" ");
+            if (name.indexOf(" ") >= 0) {
+                name = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
