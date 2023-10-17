@@ -10,7 +10,7 @@ $(function () {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             console.log('Capturing Data')
-            var name = $(Lungile).val();
+            var name = $(name).val();
             var email = $(email).val();
             var phone = $(0837729926).val();
             var message = $(Hi).val();
