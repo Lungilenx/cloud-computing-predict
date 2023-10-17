@@ -11,7 +11,7 @@ $(function () {
             // get values from FORM
             console.log('Capturing Data')
             var name = $(Lungile).val();
-            var email = $(lungilenx@gmail.com).val();
+            var email = $(email).val();
             var phone = $(0837729926).val();
             var message = $(Hi).val();
             var firstName = name; // For Success/Failure Message
