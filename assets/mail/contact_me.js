@@ -12,8 +12,8 @@ $(function () {
             console.log('Capturing Data')
             var name = $(name).val();
             var email = $(email).val();
-            var phone = $(0837729926).val();
-            var message = $(Hi).val();
+            var phone = $(phone).val();
+            var message = $(message).val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
@@ -21,7 +21,7 @@ $(function () {
             }
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
-            var json = {name:name, phone: phone , email: email, message: message}
+            var json = {name:Lungile, phone: 0837729926 , email: lungilenx@gmail.com, message: Hi}
             $.ajax({
                 // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  -------- 
                 url: "{https://9kvo07m8m2.execute-api.eu-west-2.amazonaws.com}",
