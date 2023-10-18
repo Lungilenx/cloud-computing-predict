@@ -29,7 +29,7 @@ $(function () {
                 type: "POST",
                 data: JSON.stringify(json),
                 cache: false,
-                success: function () {
+                success: function () {                    
                     // Success message
                     console.log("Success")
                     $("#success").html("<div class='alert alert-success'>");
