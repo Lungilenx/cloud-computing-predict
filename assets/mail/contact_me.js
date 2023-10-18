@@ -26,7 +26,7 @@ $(function () {
                 // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  -------- 
                 url: "https://fxb58q63ei.execute-api.eu-west-2.amazonaws.com"
                 // ------------------------------------------------------  
-                type: ("POST")
+                type: "POST",
                 data: JSON.stringify(json),
                 cache: false,
                 success: function () {
