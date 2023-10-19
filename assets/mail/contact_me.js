@@ -11,12 +11,12 @@ $(function () {
             // get values from FORM
             console.log('Capturing Data')
             var name = $("#name").val();
-            var email = $("lungilenx@gmail.com").val();
+            var email = $("").val();
             var phone = $("#phone").val();
             var message = $("#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
-            if (name.indexOf("Lungile") >= 0) {
+            if (name.indexOf("") >= 0) {
                 name = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
