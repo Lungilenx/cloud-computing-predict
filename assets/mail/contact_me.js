@@ -16,7 +16,7 @@ $(function () {
             var message = $("#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
-            if (name.indexOf(" ") >= 0) {
+            if (name.indexOf("Lungile") >= 0) {
                 name = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
