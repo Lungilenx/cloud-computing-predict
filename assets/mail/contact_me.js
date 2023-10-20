@@ -1,3 +1,4 @@
+
 $(function () {
     $(
         "#contactForm input,#contactForm textarea,#contactForm button"
@@ -10,26 +11,26 @@ $(function () {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             console.log('Capturing Data')
-            var name = $("#name").val();
-            var email = $("").val();
-            var phone = $("#phone").val();
-            var message = $("#message").val();
+            var name = $("input#name").val();
+            var email = $("input#email").val();
+            var phone = $("input#phone").val();
+            var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
-            if (name.indexOf("") >= 0) {
-                name = name.split(" ").slice(0, -1).join(" ");
+            if (firstName.indexOf(" ") >= 0) {
+                firstName = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
-            var json = {name:name, phone: phone, email: email, message: message}
+            var json = {name: name, phone: phone, email: email, message: message}
             $.ajax({
                 // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  -------- 
-                url: "https://f29w46o324.execute-api.eu-west-2.amazonaws.com",
+                url: "{https://f29w46o324.execute-api.eu-west-2.amazonaws.com}",
                 // ------------------------------------------------------  
                 type: "POST",
                 data: JSON.stringify(json),
                 cache: false,
-                success: function () {                    
+                success: function () {
                     // Success message
                     console.log("Success")
                     $("#success").html("<div class='alert alert-success'>");
