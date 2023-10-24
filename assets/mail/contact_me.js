@@ -1,4 +1,3 @@
-
 $(function () {
     $(
         "#contactForm input,#contactForm textarea,#contactForm button"
@@ -27,7 +26,7 @@ $(function () {
                 // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  -------- 
                 url: "https://9v8qzw0f20.execute-api.eu-west-2.amazonaws.com/Lungile",
                 // ------------------------------------------------------  
-                type:"POST",
+                type: "POST",
                 data: JSON.stringify(json),
                 cache: false,
                 success: function () {
